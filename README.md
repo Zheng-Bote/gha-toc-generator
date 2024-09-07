@@ -18,27 +18,7 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 <hr>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
 
-- [Description](#description)
-  - [Features](#features)
-- [Status](#status)
-- [Installation](#installation)
-  - [Dependencies](#dependencies)
-  - [folder structure](#folder-structure)
-- [Usage/Examples](#usageexamples)
-- [API Reference](#api-reference)
-  - [Parameters](#parameters)
-- [Documentation](#documentation)
-  - [Github Page](#github-page)
-- [Screenshots](#screenshots)
-- [Authors and License](#authors-and-license)
-  - [License](#license)
-    - [Apache 2.0](#apache-20)
-    - [MIT](#mit)
-  - [Authors](#authors)
-- [Code Contributors](#code-contributors)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
