@@ -488,7 +488,6 @@ jobs:
 ├── .lintstagedrc
 ├── .releasegarc
 ├── LICENSE
-├── README.ja.md
 ├── README.md
 ├── _config.yml
 ├── action.yml
@@ -546,7 +545,7 @@ jobs:
 ├── vite.config.ts
 └── yarn.lock
 
-10 directories, 91 files
+10 directories, 90 files
 ```
 <!-- readme-tree end -->
 
