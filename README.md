@@ -12,40 +12,18 @@
 
 ## Brief
 
-<p>This is a `GitHub Actions` to generate TOC (Table of Contents),  
-which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if changed.</p>
+This is a `GitHub Actions` to generate TOC (Table of Contents),  
+which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if changed.
 
 <hr>
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<details>
-<summary>Details</summary>
+<!-- START doctoc -->
 
-- [Installation](#installation)
-- [Screenshot](#screenshot)
-- [Options](#options)
-  - [Specify options individually](#specify-options-individually)
-- [Action event details](#action-event-details)
-  - [Target event](#target-event)
-  - [Conditions](#conditions)
-- [Addition](#addition)
-  - [GITHUB_TOKEN](#github_token)
-  - [Create PullRequest](#create-pullrequest)
-  - [Context variables](#context-variables)
-  - [Context PR variables](#context-pr-variables)
-- [Configuration Examples](#configuration-examples)
-  - [Example 1](#example-1)
-  - [Example 2](#example-2)
-  - [Example 3](#example-3)
-- [Author](#author)
-
-</details>
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<!-- END doctoc -->
 
 <hr>
 
-## Description
+# Description
 
 ![GHA](https://img.shields.io/badge/Github-Action-black?logo=githubactions)
 ![Node](https://img.shields.io/badge/Node-20-blue?logo=tsnode)
@@ -62,7 +40,7 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Installation
+# Installation
 
 1. Specify location of TOC (option)  
    e.g. `README.md`
@@ -107,20 +85,20 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Parameters
+# Parameters
 
 <!-- only for actions repo -->
 
-### Inputs
+## Inputs
 
-### Outputs
+## Outputs
 
 
 ## Screenshot
 
 ![behavior](https://raw.githubusercontent.com/technote-space/toc-generator/images/screenshot.gif)
 
-## Options
+# Options
 
 | name                      | description                                                                                                              | default                                                   | e.g.                           |
 | :------------------------ | :----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- | :----------------------------- |
@@ -153,7 +131,7 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Specify options individually
+## Specify options individually
 
 The options used for [doctoc](https://github.com/technote-space/doctoc#example) can be commented to specify values.
 If you want to generate multiple TOCs with different settings, specify the values individually as follows.
@@ -172,9 +150,9 @@ e.g.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Action event details
+# Action event details
 
-### Target event
+## Target event
 
 | eventName: action                                                  | condition                 |
 | :----------------------------------------------------------------- | :------------------------ |
@@ -188,23 +166,23 @@ e.g.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Conditions
+## Conditions
 
-#### condition1
+### condition1
 
 - push to branch (not tag)
   - branch name ([`TARGET_BRANCH_PREFIX`](#options))
 
-#### condition2
+### condition2
 
 - specified labels included? ([`INCLUDE_LABELS`](#options))
 - branch name ([`TARGET_BRANCH_PREFIX`](#options))
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Addition
+# Addition
 
-### GITHUB_TOKEN
+## GITHUB_TOKEN
 
 The `GITHUB_TOKEN` that is provided as a part of `GitHub Actions` doesn't have authorization to create any successive events.  
 So it won't spawn actions which triggered by push.
@@ -233,7 +211,7 @@ If you want to trigger actions, use a personal access token instead.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Create PullRequest
+## Create PullRequest
 
 If `CREATE_PR` is set to `true`, a PullRequest is created.
 
@@ -269,7 +247,7 @@ jobs:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Context variables
+## Context variables
 
 | name          | description                                                         |
 | :------------ | :------------------------------------------------------------------ |
@@ -283,7 +261,7 @@ jobs:
 
 [Payload example](https://developer.github.com/v3/activity/events/types/#webhook-payload-example-28)
 
-### Context PR variables
+## Context PR variables
 
 - [Context variables](#context-variables)
 
@@ -296,9 +274,9 @@ jobs:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Configuration Examples
+# Configuration Examples
 
-### Example 1
+## Example 1
 
 Execute actions at push without limiting the branch and commit directly
 
@@ -313,7 +291,7 @@ jobs:
       - uses: technote-space/toc-generator@v4
 ```
 
-### Example 2
+## Example 2
 
 Create or update a Pull Request by executing actions on a Pull Request update only for branches starting with `release/`.
 
@@ -333,7 +311,7 @@ jobs:
           TARGET_BRANCH_PREFIX: release/
 ```
 
-### Example 3
+## Example 3
 
 Execute actions in the schedule for the default branch only and commit directly.  
 （Using the Token created for the launch of other workflows）
@@ -356,7 +334,7 @@ jobs:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### folder structure
+# folder structure
 
 <!-- readme-tree start -->
 ```
@@ -469,9 +447,9 @@ jobs:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### License
+# License
 
-#### MIT
+## MIT
 
 MIT License
 
@@ -499,7 +477,7 @@ SOFTWARE.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## Author
+# Author
 
 [GitHub (Technote)](https://github.com/technote-space)  
 [Blog](https://technote.space)
