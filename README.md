@@ -38,6 +38,10 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 > [!CAUTION]
 > Does **not** work with GHES.
 
+[![Repo - add Actions In/Out to README](https://github.com/Zheng-Bote/gha-toc-generator/actions/workflows/repo-actions_docu.yml/badge.svg)](https://github.com/Zheng-Bote/gha-toc-generator/actions/workflows/repo-actions_docu.yml)
+[![Repo - create Repo-Tree in README.md](https://github.com/Zheng-Bote/gha-toc-generator/actions/workflows/repo-create_tree_readme.yml/badge.svg)](https://github.com/Zheng-Bote/gha-toc-generator/actions/workflows/repo-create_tree_readme.yml)
+[![Repo - create TOC of README](https://github.com/Zheng-Bote/gha-toc-generator/actions/workflows/repo-create_doctoc.yml/badge.svg)](https://github.com/Zheng-Bote/gha-toc-generator/actions/workflows/repo-create_doctoc.yml)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Installation
