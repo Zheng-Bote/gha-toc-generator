@@ -17,6 +17,9 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 
 <hr>
 
+<!-- START doctoc -->
+<!-- END doctoc -->
+
 <details open>
   <summary>**Table of Contents**</summary>
   <ol>
