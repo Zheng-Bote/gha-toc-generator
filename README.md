@@ -18,7 +18,11 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 <hr>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
+- [Description](#description)
+- [Status](#status)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
