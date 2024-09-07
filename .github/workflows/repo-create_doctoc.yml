@@ -7,11 +7,13 @@ name: Repo - create TOC of README
 
 run-name: create README table of contents by ${{ github.actor }}
 
-on: 
+on:
   workflow_dispatch:
   push:
+    branches:
+      - "main"
     paths:
-      - './README.md'
+      - "README.md"
 
 permissions:
   contents: write
