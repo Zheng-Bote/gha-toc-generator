@@ -57,8 +57,7 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 1. Specify location of TOC (option)  
    e.g. `README.md`
    ```markdown
-   <!-- START doctoc -->
-   <!-- END doctoc -->
+teh syntaxt
    ```
    [detail](https://github.com/thlorenz/doctoc#specifying-location-of-toc)
    
