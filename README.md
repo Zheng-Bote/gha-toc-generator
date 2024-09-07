@@ -34,6 +34,7 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 <hr>
 
 # Description
+<span id="description"></span>
 
 ![GHA](https://img.shields.io/badge/Github-Action-black?logo=githubactions)
 ![Node](https://img.shields.io/badge/Node-20-blue?logo=tsnode)
@@ -44,6 +45,7 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Status
+<span id="status"></span>
 
 > [!CAUTION]
 > Does **not** work with GHES.
@@ -58,6 +60,7 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Installation
+<span id="installation"></span>
 
 1. Specify location of TOC (option)  
    e.g. `README.md`
@@ -103,6 +106,7 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Parameters
+<span id="parameters"></span>
 
 <!-- only for actions repo -->
 
@@ -162,6 +166,7 @@ No outputs.
 ![behavior](https://raw.githubusercontent.com/technote-space/toc-generator/images/screenshot.gif)
 
 # Options
+<span id="options"></span>
 
 | name                      | description                                                                                                              | default                                                   | e.g.                           |
 | :------------------------ | :----------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------- | :----------------------------- |
@@ -338,6 +343,7 @@ jobs:
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Configuration Examples
+<span id="examples"></span>
 
 ## Example 0
 
@@ -433,6 +439,7 @@ jobs:
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # folder structure
+<span id="folder_structure"></span>
 
 <!-- readme-tree start -->
 ```
@@ -546,6 +553,7 @@ jobs:
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # License
+<span id="license"></span>
 
 ## MIT
 
