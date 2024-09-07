@@ -361,7 +361,112 @@ jobs:
 ### folder structure
 
 <!-- readme-tree start -->
+```
+.
+├── .commitlintrc
+├── .editorconfig
+├── .eslintrc
+├── .github
+│   ├── CODEOWNERS
+│   ├── CODE_OF_CONDUCT.md
+│   ├── CONTRIBUTING.md
+│   ├── FUNDING.yml
+│   ├── ISSUE_TEMPLATE
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   ├── card-labeler.yml
+│   ├── config.yml
+│   ├── labeler.yml
+│   ├── no-response.yml
+│   ├── pr-labeler.yml
+│   ├── pull_request_template.md
+│   ├── release-drafter.yml
+│   ├── stale.yml
+│   ├── workflow-details.json
+│   ├── workflow-settings.json
+│   └── workflows
+│       ├── add-release-tag.yml
+│       ├── add-test-tag.yml
+│       ├── check-warnings.yml
+│       ├── ci.yml
+│       ├── issue-opened.yml
+│       ├── pr-opened.yml
+│       ├── pr-updated.yml
+│       ├── project-card-moved.yml
+│       ├── repo-actions_docu.yml
+│       ├── repo-create_doctoc.yml
+│       ├── repo-create_tree_readme.yml
+│       ├── sync-workflows.yml
+│       ├── toc.yml
+│       └── update-dependencies.yml
+├── .gitignore
+├── .husky
+│   ├── .gitignore
+│   ├── commit-msg
+│   └── pre-commit
+├── .lintstagedrc
+├── .releasegarc
+├── LICENSE
+├── README.ja.md
+├── README.md
+├── _config.yml
+├── action.yml
+├── package-lock.json
+├── package.json
+├── rollup.config.mjs
+├── samples
+│   ├── README.horizontal.md
+│   └── README.not-folding.md
+├── src
+│   ├── constant.ts
+│   ├── fixtures
+│   │   ├── doctoc
+│   │   │   ├── README.create1.md
+│   │   │   ├── README.create2.md
+│   │   │   ├── README.horizontal.md
+│   │   │   ├── README.not.update.md
+│   │   │   ├── README.params.md
+│   │   │   ├── README.skip.md
+│   │   │   ├── README.toc-me.md
+│   │   │   ├── README.update.md
+│   │   │   └── expected
+│   │   │       ├── README.create1.md
+│   │   │       ├── README.create2.md
+│   │   │       ├── README.horizontal1.md
+│   │   │       ├── README.horizontal2.md
+│   │   │       ├── README.params.md
+│   │   │       ├── README.toc-me.md
+│   │   │       ├── README.update.md
+│   │   │       ├── README.update.options.md
+│   │   │       └── README.update.wrap.md
+│   │   ├── issues.comment.create.json
+│   │   ├── pulls.get.json
+│   │   ├── pulls.list.json
+│   │   ├── pulls.update.json
+│   │   ├── repos.get.json
+│   │   ├── repos.git.blobs.json
+│   │   ├── repos.git.commits.get.json
+│   │   ├── repos.git.commits.json
+│   │   ├── repos.git.refs.create.json
+│   │   ├── repos.git.refs.update.json
+│   │   ├── repos.git.trees.json
+│   │   └── test.md
+│   ├── main.ts
+│   ├── setup.ts
+│   └── utils
+│       ├── doctoc.test.ts
+│       ├── doctoc.ts
+│       ├── misc.test.ts
+│       ├── misc.ts
+│       ├── process.test.ts
+│       └── transform.ts
+├── tree.bak
+├── tsconfig.json
+├── vite.config.ts
+└── yarn.lock
 
+10 directories, 91 files
+```
 <!-- readme-tree end -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
