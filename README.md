@@ -71,41 +71,39 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
    <!-- END doctoc -->
    ```
    [detail](https://github.com/thlorenz/doctoc#specifying-location-of-toc)
-1. Setup workflow  
+   
+2. Setup workflow  
     e.g. `.github/workflows/repo-create_doctoc.yml`
-   ```yaml
+   
+```yaml
    name: Repo - create TOC of README
-   ```
+   # description: https://github.com/technote-space/toc-generator
+   # README.md:
+   # <!-- START doctoc -->
+   # <!-- END doctoc -->
 
-# description: https://github.com/technote-space/toc-generator
+   run-name: create README table of contents by ${{ github.actor }}
 
-# README.md:
-
-# <!-- START doctoc -->
-
-# <!-- END doctoc -->
-
-run-name: create README table of contents by ${{ github.actor }}
-
-on:
-workflow_dispatch:
-push:
-paths: - './README.md'
-
-permissions:
-contents: write
-
-jobs:
-generateTOC:
-name: TOC Generator
-runs-on: ubuntu-latest
-steps: - uses: Zheng-Bote/gha-toc-generator@v4.3.4
-with:
-GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-TARGET_PATHS: ./README.md
-FOLDING: false
-
+   on:
+     workflow_dispatch:
+     push:
+     paths: - './README.md'
+    
+   permissions:
+     contents: write
+    
+   jobs:
+     generateTOC:
+       name: TOC Generator
+       runs-on: ubuntu-latest
+       steps:
+         - uses: Zheng-Bote/gha-toc-generator@v4.3.4
+           with:
+             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+             TARGET_PATHS: ./README.md
+             FOLDING: false
 ````
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -506,11 +504,11 @@ SOFTWARE.
 [GitHub (Technote)](https://github.com/technote-space)  
 [Blog](https://technote.space)
 
-### Code Contributors
+## Code Contributors
 
-![Contributors](https://img.shields.io/github/contributors/Zheng-Bote/repo-template?color=dark-green)
+![Contributors](https://img.shields.io/github/contributors/technote-space/toc-generator?color=dark-green)
 
-[Zheng-Bote](https://www.github.com/Zheng-Bote)
+[![Zheng Robert](https://img.shields.io/badge/Github-Zheng_Robert-black?logo=github)](https://www.github.com/Zheng-Bote)
 
 <hr>
 
