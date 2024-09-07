@@ -17,14 +17,19 @@ which executes [DocToc](https://github.com/thlorenz/doctoc) and commits if chang
 
 <hr>
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
-
-- [Description](#description)
-- [Status](#status)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<details open>
+  <summar>**Table of Contents**</summary>
+  <ol>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#status">Status</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#parameters">Parameters</a></li>
+    <li><a href="#options">Options</a></li>
+    <li><a href="#examples">Examples</a></li>
+    <li><a href="#folder_structure">Folder Structure</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+ </details>
 
 <hr>
 
@@ -333,6 +338,41 @@ jobs:
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 # Configuration Examples
+
+## Example 0
+
+![Node](https://img.shields.io/badge/Node-20-blue?logo=tsnode)
+
+`.github/workflows/repo-create_doctoc.yml`
+   
+```yaml
+   name: Repo - create TOC of README
+   # description: https://github.com/technote-space/toc-generator
+   # README.md:
+   # <!-- START doctoc -->
+   # <!-- END doctoc -->
+
+   run-name: create README table of contents by ${{ github.actor }}
+
+   on:
+     workflow_dispatch:
+     push:
+     paths: - './README.md'
+    
+   permissions:
+     contents: write
+    
+   jobs:
+     generateTOC:
+       name: TOC Generator
+       runs-on: ubuntu-latest
+       steps:
+         - uses: Zheng-Bote/gha-toc-generator@v4.3.4
+           with:
+             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+             TARGET_PATHS: ./README.md
+             FOLDING: false
+````
 
 ## Example 1
 
